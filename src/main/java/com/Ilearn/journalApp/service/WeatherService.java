@@ -16,8 +16,8 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class WeatherService {
 
-    @Value("${weather_api_key}")
-    private String apikey;
+	@Value("${weather_api_key:}")  // empty string as default
+	private String weatherApiKey;
   //  private static final String API="http://api.weatherstack.com/current?access_key=API_KEY&query=CITY";
 
     @Autowired
