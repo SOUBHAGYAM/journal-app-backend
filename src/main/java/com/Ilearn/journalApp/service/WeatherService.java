@@ -30,7 +30,7 @@ public class WeatherService {
         try {
             String url = appCache.appCache.get(AppCache.keys.WEATHER_API.toString())
                     .replace(Placeholders.CITY, city)
-                    .replace(Placeholders.API_KEY, apikey);
+                    .replace(Placeholders.API_KEY, weatherApiKey);
 
             ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
             String body = response.getBody();
