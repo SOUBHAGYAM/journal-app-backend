@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.Ilearn.journalApp.Entity.User;
 import com.Ilearn.journalApp.dto.UserDto;
 import com.Ilearn.journalApp.service.UserDetailsServiceImpl;
