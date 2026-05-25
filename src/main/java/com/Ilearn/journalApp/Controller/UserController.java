@@ -26,8 +26,8 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 
-	@Autowired
-	private WeatherService weatherService;
+	//@Autowired
+	//private WeatherService weatherService;
 
 	/*
 	 * @GetMapping public List<User> findAll(){ return userService.getAll(); }
