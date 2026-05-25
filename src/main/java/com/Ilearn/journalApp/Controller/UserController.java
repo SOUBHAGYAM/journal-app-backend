@@ -52,7 +52,7 @@ public class UserController {
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 
-	@GetMapping
+/*	@GetMapping
 	public ResponseEntity<?> greetings() {
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		WeatherResponse weatherResponse = weatherService.getWeather("Banglore");
@@ -61,6 +61,6 @@ public class UserController {
 			greeting = ", Weather feels like " + weatherResponse.getCurrent().getFeelslike();
 		}
 		return new ResponseEntity<>("Hey " + authentication.getName() + greeting, HttpStatus.OK);
-	}
+	}*/
 
 }
