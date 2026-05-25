@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class EmailService {
 
-    @Autowired
+	@Autowired(required = false)
     private JavaMailSender javaMailSender;
 
     public void sendEmail(String to, String subject, String text) {
