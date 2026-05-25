@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 
-@Component
+
 public class WeatherService {
 
 	@Value("${weather_api_key:}")  // empty string as default

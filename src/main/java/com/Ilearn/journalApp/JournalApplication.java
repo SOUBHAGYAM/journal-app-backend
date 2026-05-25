@@ -19,10 +19,10 @@ import org.springframework.web.client.RestTemplate;
 public class JournalApplication {
 
 	public static void main(String[] args) {
-
-	ConfigurableApplicationContext context= SpringApplication.run(JournalApplication.class, args);
-        ConfigurableEnvironment environment = context.getEnvironment();
-        System.out.println(environment.getActiveProfiles()[0]);
+	    ConfigurableApplicationContext context = SpringApplication.run(JournalApplication.class, args);
+	    ConfigurableEnvironment environment = context.getEnvironment();
+	    String[] profiles = environment.getActiveProfiles();
+	    System.out.println(profiles.length > 0 ? profiles[0] : "No active profile (using default)");
 	}
 
     @Bean
